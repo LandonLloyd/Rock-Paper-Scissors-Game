@@ -14,7 +14,7 @@ font-size: 1.8vw;
 
 #main{
     background-color: mediumaquamarine;
-    height: 100vh;
+    height: 102vh;
 }
 
 #title{
@@ -53,4 +53,9 @@ i:hover{
     color: white;
     display: flex;
     justify-content: space-evenly;
+}
+
+#reset{
+    display: flex;
+    justify-content: center;
 }
