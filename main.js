@@ -7,6 +7,7 @@ let comp = document.getElementById('computer');
 let wins = document.getElementById('winScore'); 
 let lose = document.getElementById('loseScore');
 let tie = document.getElementById('tieScore');
+let reset = document.getElementById('button');
 
 rock.addEventListener('click', getRock);
 rock.addEventListener('click', computer);
@@ -14,6 +15,7 @@ paper.addEventListener('click', getPaper);
 paper.addEventListener('click', computer);
 scissors.addEventListener('click', getScissors);
 scissors.addEventListener('click', computer);
+reset.addEventListener('click', resetScore);
 
 
 
@@ -52,4 +54,10 @@ function score(number){
   }else{
       lose.innerHTML = parseInt(lose.innerHTML) + 1;
   }
+}
+
+function resetScore(){
+    tie.innerHTML = 0;
+    wins.innerHTML = 0;
+    lose.innerHTML = 0;
 }
