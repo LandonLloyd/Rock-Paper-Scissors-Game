@@ -60,4 +60,6 @@ function resetScore(){
     tie.innerHTML = 0;
     wins.innerHTML = 0;
     lose.innerHTML = 0;
+    you.innerHTML = 'Your Selection:';
+    comp.innerHTML = 'Computer Selection:'
 }
